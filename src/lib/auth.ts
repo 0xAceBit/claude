@@ -45,9 +45,21 @@ export async function getSession(): Promise<SessionPayload | null> {
 
   try {
     const { payload } = await jwtVerify(token, JWT_SECRET);
-    return payload as unknown as SessionPayload;
+    const session = payload as unknown as SessionPayload;
+    await refreshSessionIfExpiring(session);
+    return session;
   } catch (error) {
     return null;
+  }
+}
+
+// Renews the session cookie if less than 1 day remains out of the 7-day window
+async function refreshSessionIfExpiring(session: SessionPayload) {
+  const expiresAt = new Date(session.expiresAt);
+  const oneDayMs = 24 * 60 * 60 * 1000;
+
+  if (expiresAt.getTime() - Date.now() < oneDayMs) {
+    await createSession(session.userId, session.email);
   }
 }
 
