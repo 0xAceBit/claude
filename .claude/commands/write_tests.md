@@ -9,7 +9,11 @@ Testing conventions:
 Coverage:
 * Test happy paths
 * Test edge cases
+<<<<<<< HEAD
 * Test error states
 
 
 ......
+=======
+* Test error states
+>>>>>>> 17420c36b847928d522d4703e5272a132e3cba53

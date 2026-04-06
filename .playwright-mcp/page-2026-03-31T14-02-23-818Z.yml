@@ -1,0 +1,112 @@
+- generic [ref=e1]:
+  - generic [active]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - navigation [ref=e7]:
+            - button "previous" [disabled] [ref=e8]:
+              - img "previous" [ref=e9]
+            - generic [ref=e11]:
+              - generic [ref=e12]: 1/
+              - text: "1"
+            - button "next" [disabled] [ref=e13]:
+              - img "next" [ref=e14]
+          - img
+        - generic [ref=e16]:
+          - link "Next.js 15.5.14 (outdated) Turbopack" [ref=e17] [cursor=pointer]:
+            - /url: https://nextjs.org/docs/messages/version-staleness
+            - img [ref=e18]
+            - generic "An outdated version detected (latest is 16.2.1), upgrade is highly recommended!" [ref=e20]: Next.js 15.5.14 (outdated)
+            - generic [ref=e21]: Turbopack
+          - img
+      - dialog "Build Error" [ref=e23]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - generic [ref=e30]: Build Error
+              - generic [ref=e31]:
+                - button "Copy Error Info" [ref=e32] [cursor=pointer]:
+                  - img [ref=e33]
+                - button "No related documentation found" [disabled] [ref=e35]:
+                  - img [ref=e36]
+                - link "Learn more about enabling Node.js inspector for server code with Chrome DevTools" [ref=e38] [cursor=pointer]:
+                  - /url: https://nextjs.org/docs/app/building-your-application/configuring/debugging#server-side-code
+                  - img [ref=e39]
+            - paragraph [ref=e48]: Export appendResponseMessages doesn't exist in target module
+          - generic [ref=e50]:
+            - generic [ref=e52]:
+              - img [ref=e54]
+              - generic [ref=e58]: ./src/app/api/chat/route.ts (3:1)
+              - button "Open in editor" [ref=e59] [cursor=pointer]:
+                - img [ref=e61]
+            - generic [ref=e64]:
+              - generic [ref=e65]: Export appendResponseMessages doesn't exist in target module
+              - generic [ref=e66]: 1 |
+              - text: import
+              - generic [ref=e67]: "type {"
+              - text: FileNode
+              - generic [ref=e68]: "}"
+              - text: from "@/lib/file-system";
+              - generic [ref=e69]: 2 |
+              - text: import
+              - generic [ref=e70]: "{"
+              - text: VirtualFileSystem
+              - generic [ref=e71]: "}"
+              - text: from "@/lib/file-system"; >
+              - generic [ref=e72]: 3 |
+              - text: import
+              - generic [ref=e73]: "{ streamText"
+              - text: ","
+              - generic [ref=e74]: "appendResponseMessages }"
+              - text: from "ai";
+              - generic [ref=e75]: "|"
+              - text: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              - generic [ref=e76]: 4 |
+              - text: import
+              - generic [ref=e77]: "{ buildStrReplaceTool }"
+              - text: from "@/lib/tools/str-replace";
+              - generic [ref=e78]: 5 |
+              - text: import
+              - generic [ref=e79]: "{ buildFileManagerTool }"
+              - text: from "@/lib/tools/file-manager";
+              - generic [ref=e80]: 6 |
+              - text: import
+              - generic [ref=e81]: "{ prisma }"
+              - text: from "@/lib/prisma";
+              - generic [ref=e82]: The export appendResponseMessages was not found in module [project]/node_modules/ai/dist/index.mjs [app-route] (ecmascript). Did you mean to import pruneMessages? All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+        - generic [ref=e83]:
+          - generic [ref=e84]: "1"
+          - generic [ref=e85]: "2"
+    - button "Open issues overlay" [ref=e92] [cursor=pointer]:
+      - img [ref=e94]
+      - generic [ref=e96]:
+        - generic [ref=e97]: "0"
+        - generic [ref=e98]: "1"
+      - generic [ref=e99]: Issue
+  - alert [ref=e100]
+  - generic [ref=e102]:
+    - generic [ref=e104]:
+      - heading "React Component Generator" [level=1] [ref=e106]
+      - generic [ref=e108]:
+        - generic [ref=e113]:
+          - img [ref=e115]
+          - paragraph [ref=e118]: Start a conversation to generate React components
+          - paragraph [ref=e119]: I can help you create buttons, forms, cards, and more
+        - generic [ref=e122]:
+          - textbox "Describe the React component you want to create..." [ref=e123]
+          - button [disabled] [ref=e124]:
+            - img [ref=e125]
+    - separator [ref=e128]
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - tablist [ref=e133]:
+          - tab "Preview" [selected] [ref=e134]
+          - tab "Code" [ref=e135]
+        - generic [ref=e136]:
+          - button "Sign In" [ref=e137]
+          - button "Sign Up" [ref=e138]
+      - generic [ref=e142]:
+        - img [ref=e144]
+        - heading "Welcome to UI Generator" [level=3] [ref=e146]
+        - paragraph [ref=e147]: Start building React components with AI assistance
+        - paragraph [ref=e148]: Ask the AI to create your first component to see it live here

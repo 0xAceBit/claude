@@ -1,0 +1,1 @@
+"data: {\"type\":\"start\"}\n\ndata: {\"type\":\"error\",\"errorText\":\"tools.0.custom.input_schema.type: Field required\"}\n\ndata: [DONE]\n\n"

@@ -1,3 +1,4 @@
+import { tool } from "ai";
 import { z } from "zod";
 import { VirtualFileSystem } from "@/lib/file-system";
 
@@ -12,9 +13,9 @@ const TextEditorParameters = z.object({
 });
 
 export const buildStrReplaceTool = (fileSystem: VirtualFileSystem) => {
-  return {
-    id: "str_replace_editor" as const,
-    args: {},
+  return tool({
+    description:
+      "View, create, or edit files in the virtual file system. Use 'create' to make new files, 'str_replace' to modify existing content, 'insert' to add lines, and 'view' to read file contents.",
     parameters: TextEditorParameters,
     execute: async ({
       command,

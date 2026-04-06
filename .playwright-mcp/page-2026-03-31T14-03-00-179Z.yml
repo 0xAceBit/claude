@@ -1,0 +1,37 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e154] [cursor=pointer]:
+    - button "Open issues overlay" [ref=e155]:
+      - img [ref=e157]
+      - generic [ref=e159]:
+        - generic [ref=e160]: "0"
+        - generic [ref=e161]: "1"
+      - generic [ref=e162]: Issue
+    - button "Collapse issues badge" [ref=e163]:
+      - img [ref=e164]
+  - alert [ref=e100]
+  - generic [ref=e102]:
+    - generic [ref=e104]:
+      - heading "React Component Generator" [level=1] [ref=e106]
+      - generic [ref=e108]:
+        - generic [ref=e113]:
+          - img [ref=e115]
+          - paragraph [ref=e118]: Start a conversation to generate React components
+          - paragraph [ref=e119]: I can help you create buttons, forms, cards, and more
+        - generic [ref=e122]:
+          - textbox "Describe the React component you want to create..." [ref=e123]
+          - button [disabled] [ref=e124]:
+            - img [ref=e125]
+    - separator [ref=e128]
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - tablist [ref=e133]:
+          - tab "Preview" [selected] [ref=e134]
+          - tab "Code" [ref=e135]
+        - generic [ref=e136]:
+          - button "Sign In" [ref=e137]
+          - button "Sign Up" [ref=e138]
+      - generic [ref=e142]:
+        - img [ref=e144]
+        - heading "Welcome to UI Generator" [level=3] [ref=e146]
+        - paragraph [ref=e147]: Start building React components with AI assistance
+        - paragraph [ref=e148]: Ask the AI to create your first component to see it live here
